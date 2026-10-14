@@ -7,7 +7,7 @@ prints running statistics.
 
 | File | Description |
 | --- | --- |
-| `0-stats.py` | Reads lines like `<IP> - [<date>] "GET /projects/260 HTTP/1.1" <status> <size>` and prints the cumulative total file size and the number of lines per status code (200, 301, 400, 401, 403, 404, 405, 500). Lines in another format are skipped for the statistics. The stats are printed every 10 lines and on CTRL + C. |
+| `0-stats.py` | Reads lines like `<IP> - [<date>] "GET /projects/260 HTTP/1.1" <status> <size>` and prints the cumulative total file size and the number of lines per status code (200, 301, 400, 401, 403, 404, 405, 500). Lines in another format are skipped for the statistics. The stats are printed every 10 lines, when the input ends (an empty input prints `File size: 0`) and on CTRL + C. |
 
 ## Requirements
 

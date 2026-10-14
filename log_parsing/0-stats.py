@@ -21,7 +21,8 @@ def main():
     """Read stdin line by line, printing the stats every 10 lines.
 
     The stats are cumulative since the first line. They are also printed
-    when the input ends with a partial batch, or on CTRL + C.
+    when the input ends, unless the last line just completed a batch of 10,
+    and on CTRL + C.
     """
     total_size = 0
     status_counts = dict.fromkeys(STATUS_CODES, 0)
@@ -40,7 +41,8 @@ def main():
             if lines_read % PRINT_EVERY == 0:
                 print_stats(total_size, status_counts)
 
-        if lines_read % PRINT_EVERY != 0:
+        just_printed = lines_read > 0 and lines_read % PRINT_EVERY == 0
+        if not just_printed:
             print_stats(total_size, status_counts)
     except KeyboardInterrupt:
         print_stats(total_size, status_counts)
