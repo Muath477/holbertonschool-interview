@@ -10,3 +10,4 @@ Solutions for Holbertonschool interview-prep algorithm projects.
 - [log_parsing](log_parsing/) - Read a log from stdin and print running statistics.
 - [utf8_validation](utf8_validation/) - Determine whether a list of integers is a valid UTF-8 encoding.
 - [nqueens](nqueens/) - Solve the N queens puzzle with backtracking and print every solution.
+- [rotate_2d_matrix](rotate_2d_matrix/) - Rotate an n x n matrix 90 degrees clockwise in place.
