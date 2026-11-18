@@ -12,3 +12,4 @@ Solutions for Holbertonschool interview-prep algorithm projects.
 - [nqueens](nqueens/) - Solve the N queens puzzle with backtracking and print every solution.
 - [rotate_2d_matrix](rotate_2d_matrix/) - Rotate an n x n matrix 90 degrees clockwise in place.
 - [making_change](making_change/) - Fewest coins needed to reach a total.
+- [starwars_api](starwars_api/) - Print the characters of a Star Wars movie, in order.
