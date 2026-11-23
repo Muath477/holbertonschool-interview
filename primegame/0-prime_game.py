@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+"""Find the winner of the prime game over several rounds."""
 
 
 def count_primes_up_to(limit):
+    """Return a list where index n holds how many primes are <= n."""
     is_prime = [False, False] + [True] * (limit - 1)
     number = 2
     while number * number <= limit:
@@ -17,6 +19,12 @@ def count_primes_up_to(limit):
 
 
 def isWinner(x, nums):
+    """Return "Maria" or "Ben", whoever wins the most of the x rounds.
+
+    Every move removes exactly one prime, so a round has as many moves as
+    there are primes up to n. Maria starts, so she wins when that count is
+    odd. Returns None when both win the same number of rounds.
+    """
     if x < 1 or not nums:
         return None
 
