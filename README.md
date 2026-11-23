@@ -14,3 +14,4 @@ Solutions for Holbertonschool interview-prep algorithm projects.
 - [making_change](making_change/) - Fewest coins needed to reach a total.
 - [starwars_api](starwars_api/) - Print the characters of a Star Wars movie, in order.
 - [island_perimeter](island_perimeter/) - Perimeter of the island in a grid.
+- [primegame](primegame/) - Winner of a prime-removal game played over several rounds.
